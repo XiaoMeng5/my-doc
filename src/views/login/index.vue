@@ -1,26 +1,45 @@
 <template>
   <div id="LoginIndex">
     <div class="login">
-      <img
-        class="hamburger"
-        src="./images/hamburger.svg"
-        alt=""
-        @click="drawer = true"
-      >
-
-      <!-- 中间的内容 -->
-      <!-- <div class="middle">
-        <div class="left">
-          <div class="content">meet for the first time</div>
-        </div>
-        <div class="right">
-          <div class="content">文字</div>
-        </div>
-      </div> -->
+      <div class="hamburgerBox">
+        <img
+          class="hamburger"
+          src="./images/hamburger.svg"
+          @click="drawer = true"
+        >
+      </div>
 
     </div>
-    <!-- login 结束标签 -->
 
+    <div class="Login-list"></div>
+
+    <!-- 内容 -->
+    <div class="content">
+      <div class="rief-introduction">
+        <h1>嘴里的碎碎念念变成了身边的岁岁年年</h1>
+        <img class="rief-content" src="./images/bac.jpg" alt="">
+      </div>
+    </div>
+    <div class="content" >
+      <div class="rief-introduction">
+        <h1>我以为我看够了阳光 直到遇到你才知我从未真的见过阳光</h1>
+        <img class="rief-content" src="./images/bac2.png" alt="">
+      </div>
+    </div>
+    <div class="content">
+      <div class="rief-introduction">
+        <h1>早餐店不会开到晚上 想吃的人早就来了</h1>
+        <img class="rief-content" src="./images/bac1.jpg" alt="" >
+      </div>
+    </div>
+    <div class="content">
+      <div class="rief-introduction">
+        <h1>想要乘坐热气球 在你的星球上环绕</h1>
+        <img class="rief-content" src="./images/bac1.jpg" alt="" >
+      </div>
+    </div>
+
+    <!-- 侧边栏 -->
     <div class="drawer">
       <el-drawer
         :visible.sync="drawer"
@@ -49,55 +68,6 @@
 
         <el-divider></el-divider>
       </el-drawer>
-    </div>
-    <!-- 内容 -->
-    <div class="content">
-      <div class="rief-introduction">
-        <h1>嘴里的碎碎念念变成了身边的岁岁年年</h1>
-        <!-- <div class="rief-content"></div> -->
-        <img class="rief-content" src="./images/bac.jpg" alt="">
-        <!-- <span>
-          本人性格开朗与人处事融洽，
-          对工作善始善终，
-          能承受日益严重的竞争压力，
-          并能在成功与失败中完善自己。
-          活泼开朗乐观向上适应力强勤奋好学认真负责坚毅不拔勇于迎接新挑战。
-          擅长业务具有良好的沟通潜力与团队合作精神。
-        </span> -->
-      </div>
-      <!-- <div class="rief-content"></div> -->
-    </div>
-    <div class="content" >
-      <div class="rief-introduction">
-        <h1>我以为我看够了阳光 直到遇到你才知我从未真的见过阳光</h1>
-        <!-- <div class="rief-content"></div> -->
-        <img class="rief-content" src="./images/bac2.png" alt="">
-      </div>
-      <!-- <div class="rief-content"></div> -->
-    </div>
-    <div class="content">
-      <div class="rief-introduction">
-        <h1>早餐店不会开到晚上 想吃的人早就来了</h1>
-        <!-- <div class="rief-content"></div> -->
-        <img class="rief-content" src="./images/bac1.jpg" alt="" >
-      </div>
-      <!-- <div class="rief-content"></div> -->
-    </div>
-    <div class="content">
-      <div class="rief-introduction">
-        <h1>想要乘坐热气球 在你的星球上环绕</h1>
-        <!-- <div class="rief-content"></div> -->
-        <img class="rief-content" src="./images/bac1.jpg" alt="" >
-      </div>
-      <!-- <div class="rief-content"></div> -->
-    </div>
-    <div class="content">
-      <!-- <div class="rief-introduction">
-        <h1>想要乘坐热气球 在你的星球上环绕</h1> -->
-        <!-- <div class="rief-content"></div> -->
-        <!-- <img class="rief-content" src="./images/bac1.jpg" alt="" > -->
-      <!-- </div> -->
-      <!-- <div class="rief-content"></div> -->
     </div>
   </div>
 </template>
@@ -154,12 +124,24 @@ export default {
   }
 }
 
-.hamburger{
-  width: 45px;
-  height: 30px;
+.Login-list {
+  width: 100%;
+  height: 500px;
+  background-color: rgb(236, 239, 241);
+}
+.hamburgerBox {
   position: absolute;
-  top: 25px;
-  right: 25px;
+  top: 40px;
+  right: 40px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .hamburger{
+    width: 45px;
+    height: 30px;
+  }
 }
 
 .avatar{
@@ -193,7 +175,11 @@ p{
 .content{
   width: 100%;
   height: 100%;
-  background-color: #93b5cf;
+  // background-color: #93b5cf;
+  background: url('./images/new背景.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   h1{
     font-weight: 300;
     text-align: center;
