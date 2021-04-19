@@ -1,17 +1,66 @@
 <template>
   <div id="LoginIndex">
+
     <div class="login">
       <div class="hamburgerBox">
+        <img
+          width="45px"
+          height="30px"
+          src="./images/icon-find.svg"
+        >
         <img
           class="hamburger"
           src="./images/hamburger.svg"
           @click="drawer = true"
         >
       </div>
-
+    <div class="nav">
+      <el-menu class="el-menu-demo" mode="horizontal"
+      background-color="transparent" >
+        <el-menu-item index="1" color='#fff'>
+          <img src="./images/首页-选中.svg" alt="" width="20rem" height="20rem">
+          <span style="color:#fff"> 首页</span>
+        </el-menu-item>
+        <el-menu-item index="2" class="home" color='red'>
+          <img src="./images/关于.svg" alt="" width="20rem" height="20rem">
+          <span style="color:#fff" class="text"> 关于</span>
+        </el-menu-item>
+        <el-menu-item index="3" class="home" color='red'>
+          <img src="./images/域名.svg" alt="" width="20rem" height="20rem">
+          <span style="color:#fff"> 域名</span>
+        </el-menu-item>
+        <el-submenu index="2">
+          <template slot="title">
+          <img src="./images/其他.svg" alt="" width="20rem" height="20rem">
+            <span style="color:#fff"> 其他</span>
+            </template>
+          <el-menu-item index="2-1">选项1</el-menu-item>
+          <el-menu-item index="2-2">选项2</el-menu-item>
+          <el-menu-item index="2-3">选项3</el-menu-item>
+        </el-submenu>
+      </el-menu>
+    </div>
     </div>
 
-    <div class="Login-list"></div>
+    <div class="Login-list">
+      <!-- <img src="./images/编组 22.svg" alt="" class="Login-left">
+      <img src="./images/编组 23.svg" alt="" class="Login-right"> -->
+      <div class="one">
+        <p class="one-text">
+          我，现在活在这世上，知道了为什么活着，知道了什么叫做“苟非吾之所有，虽一毫而莫取”。“不以物喜，不以己悲”这就是我所追求的人生
+        </p>
+      </div>
+      <div class="one">
+        <p class="one-text">
+          我，现在活在这世上，知道了为什么活着，知道了什么叫做“苟非吾之所有，虽一毫而莫取”。“不以物喜，不以己悲”这就是我所追求的人生
+        </p>
+      </div>
+      <div class="one">
+        <p class="one-text">
+          我，现在活在这世上，知道了为什么活着，知道了什么叫做“苟非吾之所有，虽一毫而莫取”。“不以物喜，不以己悲”这就是我所追求的人生
+        </p>
+      </div>
+    </div>
 
     <!-- 内容 -->
     <div class="content">
@@ -35,7 +84,7 @@
     <div class="content">
       <div class="rief-introduction">
         <h1>想要乘坐热气球 在你的星球上环绕</h1>
-        <img class="rief-content" src="./images/bac1.jpg" alt="" >
+        <img class="rief-content" src="./images/morning.jpg" alt="" >
       </div>
     </div>
 
@@ -128,16 +177,57 @@ export default {
   width: 100%;
   height: 500px;
   background-color: rgb(236, 239, 241);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .one{
+    width: 300px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 2%;
+    border: 2px solid #000;
+    margin-left: 80px;
+    .one-text{
+      margin-top: 10px;
+      letter-spacing: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+  .Login-left{
+    width: 100px;
+    // color: transparent;
+    height: 100px;
+    float: left;
+  }
+  .Login-right{
+    width: 100px;
+    height: 100px;
+    float: right;
+  }
+}
+span{
+  font-size: 18px;
+}
+.el-menu-item{
+  position: relative;
+}
+.el-menu.el-menu--horizontal{
+  border-bottom: 0px;
+}
+.nav{
+  z-index: 100;
 }
 .hamburgerBox {
   position: absolute;
-  top: 40px;
+  top: 9px;
   right: 40px;
   width: 45px;
   height: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 200;
   .hamburger{
     width: 45px;
     height: 30px;
@@ -184,6 +274,7 @@ p{
     font-weight: 300;
     text-align: center;
     margin-top: 15px;
+    color: #fff;
   }
   .rief-introduction{
     width: 800px;
