@@ -71,8 +71,8 @@
     </div>
     <div class="content" >
       <div class="rief-introduction">
-        <h1>我以为我看够了阳光 直到遇到你才知我从未真的见过阳光</h1>
-        <img class="rief-content" src="./images/bac2.png" alt="">
+        <h1>我以为我看够了阳光直到遇到你才知我从未真的见过阳光</h1>
+        <img class="rief-content" src="./images/bac2.jpg" alt="">
       </div>
     </div>
     <div class="content">
@@ -278,13 +278,14 @@ p{
   }
   .rief-introduction{
     width: 800px;
-    height: 695px;
+    height: 630px;
     border: 2px solid rgba(0, 0, 0, 0.2);
     margin: 0 auto;
     position: relative;
-    top: 50px;
+    top: 80px;
     .rief-content {
       width: 840px;
+      height: 472px;
       position: relative;
       left: -30px;
       border: 10px solid #fff;
