@@ -32,18 +32,16 @@
         <el-menu-item index="2-2">选项2</el-menu-item>
         <el-menu-item index="2-3">选项3</el-menu-item>
       </el-submenu>
-        <div class="hamburgerBox">
-          <img
-            width="45px"
-            height="30px"
-            src="./images/icon-find.svg"
-          >
-          <img
-            class="hamburger"
-            src="./images/hamburger.svg"
+          <i
             @click="drawer = true"
-          >
-        </div>
+            class="xiaomeng xiaomeng-hamburger hamburgerBox"
+            style="color: #fff"
+          ></i>
+
+          <i
+            class="xiaomeng xiaomeng-icon-find hamburgerBox"
+            style="color:#fff; right: 85px;"
+          ></i>
     </el-menu>
 
     <!-- 侧边栏 -->
@@ -90,6 +88,7 @@ export default {
 </script>
 
 <style lang="less" scoped>
+
 span{
   font-size: 18px;
 }
@@ -127,10 +126,6 @@ span{
   justify-content: center;
   align-items: center;
   z-index: 200;
-  .hamburger{
-    width: 45px;
-    height: 30px;
-  }
 }
 
 .links-of-author{
