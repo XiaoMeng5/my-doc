@@ -69,7 +69,6 @@ export default {
 .login{
   width: 100%;
   height: 100%;
-  // background: red;
   background: url('./images/logo.jpg') no-repeat;
   background-size: cover;
   background-position: center;
@@ -95,7 +94,6 @@ export default {
     .content {
       width: 60px;
       height: 200px;
-      background: cornflowerblue;
     }
   }
 }
