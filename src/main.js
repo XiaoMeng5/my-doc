@@ -8,6 +8,10 @@ import './style/index.css'
 // icon 图标
 import './style/icon.css'
 
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+Vue.use(ElementUI)
+
 Vue.config.productionTip = false
 
 new Vue({

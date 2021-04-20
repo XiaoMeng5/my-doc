@@ -1,17 +1,29 @@
 import Vue from 'vue'
-import ElementUI from 'element-ui'
-import 'element-ui/lib/theme-chalk/index.css'
 import VueRouter from 'vue-router'
-import Login from '@/views/login'
 
 Vue.use(VueRouter)
-Vue.use(ElementUI)
 
 const routes = [
   {
-    path: '/',
-    name: 'login',
-    component: Login
+    path: '',
+    component: () => import('@/views/layout'),
+    children: [
+      {
+        path: '/',
+        name: 'home',
+        component: () => import('@/views/home')
+      },
+      {
+        path: '/about',
+        name: 'about',
+        component: () => import('@/views/about')
+      },
+      {
+        path: '/photo',
+        name: 'photo',
+        component: () => import('@/views/photo')
+      }
+    ]
   }
 ]
 
