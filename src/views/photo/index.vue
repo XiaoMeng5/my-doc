@@ -36,7 +36,48 @@
         </p>
       </div>
       <div class="two-right">
-        <img src="./images/插画.png"  width="550px" height="320px" style="margin-left:-75px">
+        <img src="./images/插画.png" width="550px" height="320px" style="margin-left:-75px">
+      </div>
+    </div>
+    <div class="one">
+      <div class="right-circle">
+        <img src="./images/circle.jpg" class="circle-img">
+      </div>
+      <div class="right-text">
+        <p class="date">四 月 21 , 2021</p>
+        <p class="one-text">
+          以前我觉得只要两个人相爱就没有什么可以阻挡后来才发现还有现实失望脾气和互相不理解</p>
+      </div>
+    </div>
+    <div class="one">
+      <div class="text">
+        <p class="date">四 月 21 , 2021</p>
+        <p class="one-text">
+          以前我觉得只要两个人相爱就没有什么可以阻挡后来才发现还有现实失望脾气和互相不理解</p>
+      </div>
+      <div class="two-right">
+        <img src="./images/景1.png" width="500px" height="550px" style="margin-left:-25px">
+      </div>
+    </div>
+    <div class="one">
+      <div class="right">
+        <img src="./images/花.png" width="400px" height="400px">
+      </div>
+      <div class="right-text">
+        <p class="date">四 月 21 , 2021</p>
+        <p class="one-text">
+          换作以前早就开始哭了 现在根本不在乎 人言可畏 说话不需要成本 我那点旧账翻烂了 也没人愿意听你那些破事
+        </p>
+      </div>
+    </div>
+    <div class="one">
+      <div class="text">
+        <p class="date">四 月 21 , 2021</p>
+        <p class="one-text">
+          以前我觉得只要两个人相爱就没有什么可以阻挡后来才发现还有现实失望脾气和互相不理解</p>
+      </div>
+      <div class="two-right">
+        <img src="./images/绿.png" width="570px" height="550px" style="margin-left:-25px">
       </div>
     </div>
   </div>
@@ -63,7 +104,14 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 100px auto;
+  // margin-top: 100px;
+  // margin: 100 auto;
+  width: 100%;
+  height: 100%;
+  background: url('./images/new.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .two{
   display: flex;
@@ -73,17 +121,21 @@ export default {
 }
 
 .right{
+  margin-top: 100px;
   margin-right: 150px;
 }
 .two-right{
+  margin-top: 100px;
   margin-right: 70px;
 }
 .one .img{
+  // margin-top: 100px;
   width: 400px;
   height: 470px;
 }
 
 .right-img{
+  margin-top: 100px;
   width: 600px;
   height: 350px;
 }
@@ -98,12 +150,14 @@ export default {
 }
 
 .two-text{
+  margin-top: 100px;
   width: 350px;
   height: 220px;
   margin: 0 auto;
 }
 
 .text-right{
+  // margin-top: 100px;
   position: absolute;
   left: 1260px;
   top: 280px;
@@ -112,17 +166,20 @@ export default {
 }
 
 .text{
+  margin-top: 100px;
   width: 350px;
   height: 220px;
   margin: 0 auto;
 }
 .two-text{
+  margin-top: 100px;
   width: 350px;
   height: 220px;
   margin: 0 auto;
 }
 
 .right-text{
+  margin-top: 100px;
   width: 350px;
   height: 220px;
 }
@@ -130,11 +187,23 @@ export default {
   letter-spacing: 21px;
   margin: 0 auto;
   margin-top: 55px;
-  color: #555;
+  color: rgba(255, 255, 255,0.8);
   font-size: 16px;
+  margin-top: 100px;
 }
 .date{
   font-size: 12px;
-  color: #999;
+  color: #000;
+}
+
+.circle-img{
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  margin-top: 100px;
+}
+.right-circle{
+  margin-right: 290px;
+  margin-top: 100px;
 }
 </style>
