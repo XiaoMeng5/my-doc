@@ -9,17 +9,11 @@
       </div>
       <div class="right">
         <img src="./images/天鹅1.png" class="img">
-        <div class="text-left">
-          <span> Live a good life </span>
-        </div>
-        <div class="text-right">
-          <span> and meet slowly</span>
-        </div>
       </div>
     </div>
     <div class="one">
       <div class="right">
-        <img src="./images/汤圆.png" class="right-img">
+        <img src="./images/汤圆.png" width=600px; height=350px; style="margin-top: 100px; margin-right:100px">
       </div>
       <div class="right-text">
         <p class="date">四 月 20 , 2021</p>
@@ -61,7 +55,7 @@
     </div>
     <div class="one">
       <div class="right">
-        <img src="./images/花.png" width="400px" height="400px">
+        <img src="./images/花.png" width="400px" height="400px" style="margin-right:290px">
       </div>
       <div class="right-text">
         <p class="date">四 月 21 , 2021</p>
@@ -77,7 +71,7 @@
           以前我觉得只要两个人相爱就没有什么可以阻挡后来才发现还有现实失望脾气和互相不理解</p>
       </div>
       <div class="two-right">
-        <img src="./images/绿.png" width="570px" height="550px" style="margin-left:-25px">
+        <img src="./images/绿.png" width="570px" height="550px" style="margin-left:-85px">
       </div>
     </div>
   </div>
@@ -104,8 +98,6 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  // margin-top: 100px;
-  // margin: 100 auto;
   width: 100%;
   height: 100%;
   background: url('./images/new.jpg') no-repeat;
@@ -113,40 +105,20 @@ export default {
   background-size: cover;
   background-attachment: fixed;
 }
-.two{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 100px;
-}
 
 .right{
   margin-top: 100px;
-  margin-right: 150px;
+  margin-right: 50px;
 }
+
 .two-right{
   margin-top: 100px;
   margin-right: 70px;
 }
+
 .one .img{
-  // margin-top: 100px;
-  width: 400px;
+  width: 500px;
   height: 470px;
-}
-
-.right-img{
-  margin-top: 100px;
-  width: 600px;
-  height: 350px;
-}
-
-.text-left{
-  position: absolute;
-  left: 1040px;
-  top: 280px;
-  font-size: 25px;
-  font-weight: 900;
-  color: #fff;
 }
 
 .two-text{
@@ -154,15 +126,6 @@ export default {
   width: 350px;
   height: 220px;
   margin: 0 auto;
-}
-
-.text-right{
-  // margin-top: 100px;
-  position: absolute;
-  left: 1260px;
-  top: 280px;
-  font-size: 25px;
-  font-weight: 900;
 }
 
 .text{
@@ -183,6 +146,7 @@ export default {
   width: 350px;
   height: 220px;
 }
+
 .one-text{
   letter-spacing: 21px;
   margin: 0 auto;
@@ -191,6 +155,7 @@ export default {
   font-size: 16px;
   margin-top: 100px;
 }
+
 .date{
   font-size: 12px;
   color: #000;
@@ -202,6 +167,7 @@ export default {
   border-radius: 50%;
   margin-top: 100px;
 }
+
 .right-circle{
   margin-right: 290px;
   margin-top: 100px;
