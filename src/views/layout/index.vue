@@ -3,7 +3,6 @@
     <el-menu
       class="el-menu-demo"
       mode="horizontal"
-      background-color="black"
     >
       <el-menu-item index="1" color='#fff'>
         <img src="./images/首页-选中.svg" alt="" width="20rem" height="20rem">
@@ -45,11 +44,12 @@
     </el-menu>
 
     <!-- 侧边栏 -->
-     <el-drawer
+      <el-drawer
         :visible.sync="drawer"
         direction="ltr"
+        style="background-image: url('./images/avatar.jpg');"
       >
-        <img src="./images/avatar.jpg" alt="" class="avatar">
+        <img src="./images/avatar.jpg" class="avatar">
         <p>小萌</p>
         <p>原地孤芳自赏，不如自由盛放</p>
 
@@ -63,15 +63,17 @@
             <img src="./images/douyin.svg" alt="">
           </div>
           <div class="icon">
-            <img src="./images/wangyiyun.svg" alt="">
+            <a href="https://music.163.com/#/user/home?id=612000409" target="_blank"><img src="./images/wangyiyun.svg" alt=""></a>
             <img src="./images/email.svg" alt="">
             <img src="./images/bilibili-line.svg" alt="">
-            <img src="./images/mayun.svg" alt="">
+            <a href="https://gitee.com/li_zimeng" target="_blank"><img src="./images/mayun.svg" alt=""></a>
+
           </div>
         </div>
 
         <el-divider></el-divider>
       </el-drawer>
+
     <router-view />
   </div>
 </template>
@@ -113,7 +115,8 @@ span{
   right: 0px;
   left: 0px;
   height: 60px;
-  z-index: 99999;
+  z-index: 99;
+  background: transparent;
 }
 
 .hamburgerBox {
@@ -155,5 +158,11 @@ span{
 p{
   text-align: center;
   padding-top: 10px;
+}
+
+.drawer{
+  width: 100%;
+  height: 100%;
+  background: url('./images/avatar.jpg') no-repeat;
 }
 </style>

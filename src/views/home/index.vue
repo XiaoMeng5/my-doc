@@ -3,19 +3,30 @@
     <div class="login"></div>
     <div class="Login-list">
       <div class="one">
-        <p class="one-text">
-          我，现在活在这世上，知道了为什么活着，知道了什么叫做“苟非吾之所有，虽一毫而莫取”。“不以物喜，不以己悲”这就是我所追求的人生
-        </p>
+        <fieldset>
+          <legend class="title">深夜鲸落</legend>
+          <p>
+            我，现在活在这世上，知道了为什么活着，知道了什么叫做“苟非吾之所有，虽一毫而莫取”。“不以物喜，不以己悲”这就是我所追求的人生
+          </p>
+        </fieldset>
       </div>
       <div class="one">
-        <p class="one-text">
-          我，现在活在这世上，知道了为什么活着，知道了什么叫做“苟非吾之所有，虽一毫而莫取”。“不以物喜，不以己悲”这就是我所追求的人生
-        </p>
+        <fieldset>
+          <legend class="title">漫步雨夜</legend>
+          <p>
+            如果对自己的蹉跎岁月感到后悔，
+            那就请你现在就开始努力吧！
+            因为这已是你最年轻的模样。
+          </p>
+        </fieldset>
       </div>
       <div class="one">
-        <p class="one-text">
-          我，现在活在这世上，知道了为什么活着，知道了什么叫做“苟非吾之所有，虽一毫而莫取”。“不以物喜，不以己悲”这就是我所追求的人生
-        </p>
+        <fieldset>
+          <legend class="title">万千归途</legend>
+          <p>
+            决定去做一件事情，或是去养成一种习惯，甚至是去爱一个人；开始这些事情最好的时机，一般都是——此时此刻
+          </p>
+        </fieldset>
       </div>
     </div>
 
@@ -105,18 +116,26 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  .one{
-    width: 300px;
+
+  .one {
+    width: 280px;
     height: 200px;
-    background-color: #fff;
-    border-radius: 2%;
-    border: 2px solid #000;
-    margin-left: 80px;
-    .one-text{
-      margin-top: 25px;
-      letter-spacing: 10px;
-      margin-left: 25px;
-      margin-right: 10px;
+    border: 1px solid #d2d2d2;
+    margin-left: 15px;
+    fieldset {
+      border-bottom: transparent;
+      border-left: transparent;
+      border-right: transparent;
+      border-top: 1px solid #d2d2d2;
+      margin-top: 30px;
+      .title {
+        text-align: center;
+        font-size: 21px;
+        padding: 0  30px 0 30px;
+      }
+      p {
+        padding: 14px;
+      }
     }
   }
 
