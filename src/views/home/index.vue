@@ -1,6 +1,8 @@
 <template>
   <div id="LoginIndex">
-    <div class="login"></div>
+    <div class="login">
+      <video src="./images/视频.mp4" autoplay loop muted></video>
+    </div>
     <div class="Login-list">
       <div class="one">
         <fieldset>
@@ -78,11 +80,22 @@ export default {
 }
 
 .login{
-  width: 100%;
-  height: 100%;
-  background: url('./images/logo.jpg') no-repeat;
-  background-size: cover;
-  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // z-index: -1;
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  // width: 100%;
+  // height: 100%;
+  // background: url('./images/logo.jpg') no-repeat;
+  // background-size: cover;
+  // background-position: center;
   .middle {
     width: 120px;
     height: 100%;

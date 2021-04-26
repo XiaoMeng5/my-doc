@@ -34,11 +34,11 @@
     <div class="hobby">
       <h3><img src="./images/樱花.svg" alt=""> 常用账号</h3>
       <ul>
+        <a href="https://music.163.com/#/user/home?id=612000409" target="_blank">小萌在这-</a><li>网易云音乐</li>
+        <li>weibo</li>
+        <li></li>
+        <li></li>
         <li>你说向日葵是怎么熬过没有太阳的夜晚的</li>
-        <li>倒是很爱你</li>
-        <li></li>
-        <li></li>
-        <li></li>
       </ul>
     </div>
 
@@ -96,5 +96,9 @@ export default {
     transform: scaleX(1) scaleY(1) scaleZ(1);
     // background: skyblue;
   }
+}
+
+a{
+  text-decoration-line: none;
 }
 </style>
