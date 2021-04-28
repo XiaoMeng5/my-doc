@@ -11,7 +11,7 @@
       </ul>
     </div>
     <div class="character">
-      <h3><img src="./images/性格.svg" alt=""> 性格</h3>
+      <h3><img src="./images/性格.svg" alt="" class="char"> 性格</h3>
       <ul>
         <li>我站在你的角度 越为你考虑就越为我自己难过</li>
         <li>敏感多虑</li>
@@ -22,7 +22,7 @@
       <p> </p>
     </div>
     <div class="life">
-      <h3><img src="./images/生活.svg" alt=""> 生活</h3>
+      <h3><img src="./images/生活.svg" alt="" class="swing"> 生活</h3>
       <ul>
         <li>我在等一个浪漫的夏天 希望这个就是</li>
         <li>我真的超想和你有很久很久的未来</li>
@@ -32,7 +32,7 @@
       </ul>
     </div>
     <div class="hobby">
-      <h3><img src="./images/樱花.svg" alt=""> 常用账号</h3>
+      <h3><img src="./images/樱花.svg" alt="" class="contact"> 常用账号</h3>
       <ul>
         <a href="https://music.163.com/#/user/home?id=612000409" target="_blank">小萌在这-</a><li>网易云音乐</li>
         <li>weibo</li>
@@ -64,38 +64,76 @@ export default {
   background-size: cover;
   background-attachment: fixed;
   position: fixed;
-  // background: transparent;
 }
-  .content img{
-    width: 1.5rem;
-    height: 1.5rem;
-  }
+.content img{
+  width: 1.5rem;
+  height: 1.5rem;
+}
 .about-me{
   margin-top: 60px;
 }
 .anchor {
-  // -webkit-animation: beat 1.33s ease-in-out infinite;
-  animation: beat 1.5s ease-in-out infinite;
-  // animation-duration: 1.33s;
-  // animation-timing-function: ease-in-out;
-  animation-delay: 0s;
-  // animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-fill-mode: none;
-  animation-play-state: running;
-  // animation-name: beat;
-
+  animation: beat 1.5s linear infinite;
 }
 @keyframes beat {
+    0%{
+      transform: scaleZ(1);
+    }
+   50%{
+     transform: scale(1.2);
+    }
+    100% { //动画结束样式
+      transform: scale(1);
+    }
+}
 
-  50% {
-    transform: scaleX(1) scaleY(1.3) scaleZ(1.3);
-    // background: skyblue;
-  }
-  100% {
-    transform: scaleX(1) scaleY(1) scaleZ(1);
-    // background: skyblue;
-  }
+.char{
+  animation: char 2.5s 1.5s linear infinite;
+}
+@keyframes char {
+    0% {
+        opacity:1;
+     }
+    25% {
+        opacity:0;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity:1;
+    }
+}
+
+.swing{
+  animation: move 2.5s 1.5s linear infinite;
+}
+
+@keyframes move {
+    10%{
+    transform: rotate(15deg);
+    }
+    20%{
+    transform: rotate(-10deg);
+    }
+    30%{
+    transform: rotate(5deg);
+    }
+    40%{
+    transform: rotate(-5deg);
+    }
+    50%,100%{
+      transform:rotate(0deg)
+    }
+}
+
+.contact{
+  animation: contact 3.5s linear 3s infinite;
+}
+
+@keyframes contact{
+  from{transform: rotateZ(0deg);}
+  to{transform: rotateZ(360deg);}
 }
 
 a{
