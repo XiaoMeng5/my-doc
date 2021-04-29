@@ -20,16 +20,14 @@
         <img src="./images/留言板.svg" alt="" width="20rem" height="20rem">
         <span style="color:#fff"> 留言板</span>
       </el-menu-item>
-      <el-submenu index="2">
+      <el-submenu index="4">
         <template slot="title">
         <img src="./images/其他.svg" alt="" width="20rem" height="20rem">
           <span style="color:#fff"> 其他</span>
           </template>
           <router-link to="/photo" style="text-decoration: none;">
-            <el-menu-item index="2-1">摄影</el-menu-item>
+            <el-menu-item>摄影</el-menu-item>
           </router-link>
-        <el-menu-item index="2-2">选项2</el-menu-item>
-        <el-menu-item index="2-3">选项3</el-menu-item>
       </el-submenu>
           <i
             @click="drawer = true"
@@ -88,6 +86,17 @@ export default {
   }
 }
 </script>
+<style>
+  .el-menu--horizontal>.el-menu-item:not(.is-disabled):hover{
+    background: transparent;
+  }
+   .el-menu--horizontal>.el-submenu .el-submenu__title:hover{
+     background: transparent;
+   }
+   .el-menu--horizontal>.el-menu-item.is-active{
+     border-bottom: 3px solid #fff;
+   }
+</style>
 
 <style lang="less" scoped>
 
