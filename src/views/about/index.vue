@@ -8,8 +8,6 @@
           <li>小萌不在</li>
           <li>永远的十八岁</li>
           <li>很懒</li>
-          <li></li>
-          <li></li>
         </ul>
       </div>
       <div class="about">
@@ -17,9 +15,6 @@
         <ul>
           <li>我站在你的角度 越为你考虑就越为我自己难过</li>
           <li>敏感多虑</li>
-          <li></li>
-          <li></li>
-          <li></li>
         </ul>
         <p> </p>
       </div>
@@ -29,18 +24,16 @@
           <li>我在等一个浪漫的夏天 希望这个就是</li>
           <li>我真的超想和你有很久很久的未来</li>
           <li>糟糕透了</li>
-          <li></li>
-          <li></li>
         </ul>
       </div>
       <div class="about">
         <h3><img src="./images/樱花.svg" alt="" class="contact"> 常用账号</h3>
           <p>
-            <a href="https://music.163.com/#/user/home?id=612000409" target="_blank" style="color:#f0a1a8">小萌在这-</a>
-            <span>网易云音乐</span>
+            <a href="https://music.163.com/#/user/home?id=612000409" target="_blank" style="color:#f0a1a8">小萌在这- </a>
+            <span> @网易云音乐</span>
           </p>
           <p>
-            <a href="https://weibo.com/6597125153/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1" target="_blank" style="color:#f0a1a8">小萌不在_ </a><span>weibo</span>
+            <a href="https://weibo.com/6597125153/profile?rightmod=1&wvr=6&mod=personinfo&is_all=1" target="_blank" style="color:#f0a1a8">小萌不在_ </a><span> @weibo</span>
           </p>
           <span>你说向日葵是怎么熬过没有太阳的夜晚的</span>
       </div>
@@ -72,8 +65,8 @@ export default {
 
 <style lang="less" scoped>
 .box{
-  width: 100%;
-  background-color:#fafafa;
+  background: #eeeeee;
+  padding-bottom: 100px;
 }
 .header{
   width: 100%;
@@ -92,17 +85,15 @@ export default {
 .content{
   width: 900px;
   height: 500px;
+  margin: auto;
   background-color: #fff;
-  position: relative;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-  top: 100px;
-  left: 50%;
-  box-shadow: 0px 2px 2px 2px #f3f3f3;
+  margin-top: 100px;
+  box-shadow: 0px 1px 1px 1px #d4d4d4;
 }
 .about{
   margin-left: 30px;
-  margin-top: 30px;
+  padding-top: 30px;
+  position: relative;
 }
 li{
   list-style: none;

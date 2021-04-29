@@ -16,10 +16,15 @@
         <span style="color:#fff" class="text"> 关于</span>
         </router-link>
       </el-menu-item>
-      <el-menu-item index="3" class="home" color='red'>
-        <img src="./images/留言板.svg" alt="" width="20rem" height="20rem">
-        <span style="color:#fff"> 留言板</span>
-      </el-menu-item>
+      <el-submenu index="3">
+        <template slot="title">
+        <img src="./images/magic.svg" alt="" width="20rem" height="20rem">
+          <span style="color:#fff"> 友链</span>
+          </template>
+          <router-link to="/website" style="text-decoration: none;">
+            <el-menu-item>网址</el-menu-item>
+          </router-link>
+      </el-submenu>
       <el-submenu index="4">
         <template slot="title">
         <img src="./images/其他.svg" alt="" width="20rem" height="20rem">
@@ -94,7 +99,7 @@ export default {
      background: transparent;
    }
    .el-menu--horizontal>.el-menu-item.is-active{
-     border-bottom: 3px solid #fff;
+     border-bottom: 3px solid transparent;
    }
 </style>
 
