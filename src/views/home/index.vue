@@ -31,9 +31,10 @@
         </fieldset>
       </div>
     </div>
+    <div class="img"></div>
 
     <!-- 内容 -->
-    <div class="content">
+    <!-- <div class="content">
       <div class="rief-introduction">
         <h1>嘴里的碎碎念念变成了身边的岁岁年年</h1>
         <img class="rief-content" src="./images/bac.jpg" alt="">
@@ -56,12 +57,63 @@
         <h1>想要乘坐热气球 在你的星球上环绕</h1>
         <img class="rief-content" src="./images/morning.jpg" alt="" >
       </div>
+    </div> -->
+    <div class="content">
+      <div class="one-content">
+        <div class="right">
+          <img src="./images/汤圆.png" width=500px; height=300px;>
+        </div>
+        <div class="right-text">
+          <p class="date">四 月 20 , 2021</p>
+          <p class="one-text" style="color:#6b6b6b">
+            总有一天你的棱角会被世界磨平，你会拔掉身上的刺，你会学着对讨厌的人微笑，你会变成一个不动声色的人
+          </p>
+        </div>
+      </div>
+      <div class="one-content">
+        <div class="text">
+          <p class="date">四 月 20 , 2021</p>
+          <p class="one-title" style="color:#7b94ff">
+            你要相信看似不起波澜的日复一日，会突然在某一天让人看到坚持的意义
+          </p>
+        </div>
+        <div class="two-right">
+          <img src="./images/插画.png" width="500px" height="280px" style="margin-left:-10px">
+        </div>
+      </div>
+      <div class="one-content">
+        <div class="right">
+          <img src="./images/花.png" width=350px; height=350px;>
+        </div>
+        <div class="right-text" style="margin-left:330px">
+          <p class="date">四 月 20 , 2021</p>
+          <p class="one-text" style="color:#ff255d">
+            你的好运气藏在实力里，也藏在你不为人知的努力里，你越努力就越幸运
+          </p>
+        </div>
+      </div>
+      <div class="one-content">
+        <div class="text">
+          <p class="date">四 月 21 , 2021</p>
+          <p class="one-title" style="color:#057d0e">
+            保持积极并不意味着，你要一直快乐，而是即使在最艰难的日子，你也相信会有变好的那一天
+          </p>
+        </div>
+        <div class="two-right">
+          <img src="./images/绿.png" width="500px" height="480px" style="margin-left:-50px;margin-top:-50px;padding-bottom:80px">
+        </div>
+      </div>
     </div>
+    <div class="footer">
+      <div class="footer-content">
+        <p style="color:#3d94ff">©小萌的网站</p>
+        <p>我在等一个浪漫的夏天</p>
+        <p>希望这个就是</p>
+      </div>
 
+    </div>
     <!-- 侧边栏 -->
-    <div class="drawer">
-
-    </div>
+    <div class="drawer"></div>
   </div>
 </template>
 <script>
@@ -175,38 +227,109 @@ span{
 .el-menu.el-menu--horizontal{
   border-bottom: 0px;
 }
-
-.content{
+.img{
   width: 100%;
-  height: 100%;
+  height: 500px;
   background: url('./images/new背景.jpg') no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  h1{
-    font-weight: 300;
-    text-align: center;
-    margin-top: 15px;
-    color: #fff;
-  }
-  .rief-introduction{
-    width: 800px;
-    height: 630px;
-    border: 2px solid rgba(0, 0, 0, 0.2);
-    margin: 0 auto;
-    position: relative;
-    top: 80px;
-    .rief-content {
-      width: 840px;
-      height: 472px;
-      position: relative;
-      left: -30px;
-      border: 10px solid #fff;
-      margin-top: 20px;
-    }
-    span{
-      color: #fff;
-    }
-  }
+}
+.content{
+  // display: flex;
+  width: 100%;
+  box-shadow: 0 .125rem 1.25rem #eceff1;
+  // border: 1px solid red;
+  margin: auto;
+  background-color: #eceff1;
+  // height: 100%;
+  // background: url('./images/new背景.jpg') no-repeat;
+  // background-position: center;
+  // background-size: cover;
+  // background-attachment: fixed;
+}
+//   h1{
+//     font-weight: 300;
+//     text-align: center;
+//     margin-top: 15px;
+//     color: #fff;
+//   }
+//   .rief-introduction{
+//     width: 800px;
+//     height: 630px;
+//     border: 2px solid rgba(0, 0, 0, 0.2);
+//     margin: 0 auto;
+//     position: relative;
+//     top: 80px;
+//     .rief-content {
+//       width: 840px;
+//       height: 472px;
+//       position: relative;
+//       left: -30px;
+//       border: 10px solid #fff;
+//       margin-top: 20px;
+//     }
+//     span{
+//       color: #fff;
+//     }
+//   }
+// }
+
+.one-content{
+  display: flex;
+}
+.right img{
+  margin-top: 250px;
+  margin-left: 210px;
+}
+.right-text{
+  margin-top: 290px;
+  margin-left: 160px;
+  width: 350px;
+  height: 220px;
+}
+.one-text{
+  letter-spacing: 21px;
+  margin: 0 auto;
+  margin-top: 55px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 50px;
+}
+.two-right{
+  display: flex;
+  margin-left: 850px;
+  margin-top: 200px;
+}
+.one-title{
+  letter-spacing: 21px;
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 50px;
+}
+.text{
+  position: absolute;
+  margin-top: 250px;
+  margin-left: 210px;
+  width: 350px;
+  height: 220px;
+}
+.date{
+  font-size: 12px;
+  color: #000;
+}
+.footer{
+  display: flex;
+  width: 100%;
+  height: 200px;
+  background-color: rgba(236, 241, 244);
+}
+.footer-content{
+  // display: flex;
+  // padding-top: 10px;
+  font-size: 18px;
+  letter-spacing: 10px;
+  margin: auto;
 }
 </style>
